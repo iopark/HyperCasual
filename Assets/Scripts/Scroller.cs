@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
+    //Reflection: Following Scroller focus solely on the View element. This doesn't take account of Controller, by importing different models through inspector, 
+    // * The scrolling functionally is achieved through using for loops of a list. * 
     [SerializeField] private Transform[] childs;
     [SerializeField] private float scrollSpeed;
 

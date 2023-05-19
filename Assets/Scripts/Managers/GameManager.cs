@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
         if (instance != null)
         {
             Debug.Log("Following SingleTon Material has been listed Already");
-            Destroy(this); 
+            Destroy(this);
+            return;
         }
         instance = this;
         DontDestroyOnLoad(this); 

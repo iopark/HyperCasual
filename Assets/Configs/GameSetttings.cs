@@ -7,18 +7,18 @@ public class GameSettings
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Init()
     {
-        InitPlatform();
+        //InitPlatform();
         InitGameManager();
     }
 
-    private static void InitPlatform()
-    {
-#if UNITY_STANDALONE_WIN
+//    private static void InitPlatform()
+//    {
+//#if UNITY_STANDALONE_WIN
 		
-#elif UNITY_ANDROID
-        Application.targetFrameRate = 60;
-#endif
-    }
+//#elif UNITY_ANDROID
+//        Application.targetFrameRate = 60;
+//#endif
+//    }
 
     private static void InitGameManager()
     {

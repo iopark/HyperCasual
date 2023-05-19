@@ -10,7 +10,7 @@ public class ScoreBoardView : MonoBehaviour
 
     private void OnEnable()
     {
-        curText.text = GameManager.Data.CurScore.ToString();
-        bestText.text = GameManager.Data.CurScore.ToString(); 
+        curText.text = GameManager.Data.CurScore.ToString(); // taking advantage of SingleTon System 
+        bestText.text = GameManager.Data.BestScore.ToString(); 
     }
 }
